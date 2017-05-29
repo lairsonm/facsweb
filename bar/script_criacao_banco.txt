@@ -1,0 +1,39 @@
+CREATE DATABASE bar_php;
+
+CREATE TABLE usuario (
+    id int,
+    nome varchar(50),
+    usuario varchar(15),
+    senha varchar(15),
+);
+
+CREATE TABLE bebida (
+    id int,
+    descricao varchar(50),
+    cod_tipo varchar(15),
+);
+
+CREATE TABLE refeicao (
+    id int,
+    descricao varchar(50),
+    cod_tipo varchar(15),
+);
+
+CREATE TABLE tipo_bebida (
+    id int,
+    descricao varchar(50),
+);
+
+CREATE TABLE tipo_refeicao (
+    id int,
+    descricao varchar(50),
+);
+
+CREATE TABLE pedido (
+    id int,
+    cod_bebida int,
+    qtd_bebida int,
+    cod_refeicao int,
+    qtd_refeicao int,
+    cod_usuario int,
+);
