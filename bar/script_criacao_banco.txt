@@ -5,28 +5,29 @@ CREATE TABLE usuario (
     nome varchar(50),
     usuario varchar(15),
     senha varchar(15),
+    perfil int
 );
 
 CREATE TABLE bebida (
     id int,
     descricao varchar(50),
-    cod_tipo varchar(15),
+    cod_tipo varchar(15)
 );
 
 CREATE TABLE refeicao (
     id int,
     descricao varchar(50),
-    cod_tipo varchar(15),
+    cod_tipo varchar(15)
 );
 
 CREATE TABLE tipo_bebida (
     id int,
-    descricao varchar(50),
+    descricao varchar(50)
 );
 
 CREATE TABLE tipo_refeicao (
     id int,
-    descricao varchar(50),
+    descricao varchar(50)
 );
 
 CREATE TABLE pedido (
@@ -35,5 +36,5 @@ CREATE TABLE pedido (
     qtd_bebida int,
     cod_refeicao int,
     qtd_refeicao int,
-    cod_usuario int,
+    cod_usuario int
 );
