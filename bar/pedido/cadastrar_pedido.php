@@ -53,6 +53,8 @@
     <body>
         <center>
         <h1>Cadastro de Pedido</h1>
+        <a href="../login/logout.php"><img src="../img/logout.png">Logout</a>
+            <br>
         <a href="../bebida/cadastrar_bebida.php"><img src="../img/add.png">Cadastrar Bebida</a>
         <a href="../bebida/listar_bebida.php"><img src="../img/add.png">Listar Bebida</a>
         <a href="../bebida/cadastrar_tipo_bebida.php"><img src="../img/add.png">Cadastrar Tipo de Bebida</a>
