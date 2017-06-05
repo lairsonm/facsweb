@@ -1,5 +1,6 @@
 CREATE DATABASE bar_php;
 
+USE DATABASE bar_php;
 CREATE TABLE usuario (
     id int,
     nome varchar(50),

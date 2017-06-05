@@ -1,7 +1,13 @@
 <?php 
+
     //Verificando se o enviar foi clicado
     if ($_POST != NULL) 
     {
+        //Verifica se o usuário está logado
+        if ($_SESSION["logado"] != "ok"){
+        header ('Location: ../login/index.php');
+        }
+        
         $descricao  = addslashes($_POST["descricao"]);
         
         //Configurando conexão com o banco
@@ -45,7 +51,21 @@
     <body>
         <center>
         <h1>Cadastro de Tipo de Refeição</h1>
-        <a href="listar_tipo_refeicao.php"><img src="img/add.png">Listar Tipo de Refeição</a>
+         <a href="../bebida/cadastrar_bebida.php"><img src="../img/add.png">Cadastrar Bebida</a>
+        <a href="../bebida/listar_bebida.php"><img src="../img/add.png">Listar Bebida</a>
+        <a href="../bebida/cadastrar_tipo_bebida.php"><img src="../img/add.png">Cadastrar Tipo de Bebida</a>
+        <a href="../bebida/listar_tipo_bebida.php"><img src="../img/add.png">Listar Tipo de Bebida</a>
+            <br>
+        <a href="../refeicao/cadastrar_refeicao.php"><img src="../img/add.png">Cadastrar Refeição</a>
+        <a href="../refeicao/listar_refeicao.php"><img src="../img/add.png">Listar Refeição</a>
+        <a href="../refeicao/cadastrar_tipo_refeicao.php"><img src="../img/add.png">Cadastrar Tipo de Refeição</a>
+        <a href="../refeicao/listar_tipo_refeicao.php"><img src="../img/add.png">Listar Tipo de Refeição</a>
+            <br>
+        <a href="../pedido/cadastrar_pedido.php"><img src="../img/add.png">Cadastrar Pedido</a>
+        <a href="../pedido/listar_pedido.php"><img src="../img/add.png">Listar Pedido</a>
+            <br>
+        <a href="../usuario/cadastrar_usuario.php"><img src="../img/add.png">Cadastrar Usuário</a>
+        <a href="../usuario/listar_usuario.php"><img src="../img/add.png">Listar Usuário</a>
         <br><br>
         <fieldset style="width:300px">
             <legend>Informações de Tipo de Refeição</legend>
