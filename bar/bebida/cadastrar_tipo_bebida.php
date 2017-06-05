@@ -1,13 +1,14 @@
 <?php
- 
+    session_start();
+    //Verifica se o usuário está logado
+    if ($_SESSION["logado"] != "ok"){
+    header ('Location: ../login/index.php');
+    }
     
     //Verificando se o enviar foi clicado
     if ($_POST != NULL) 
     {
-        //Verifica se o usuário está logado
-        if ($_SESSION["logado"] != "ok"){
-        header ('Location: ../login/index.php');
-        }
+        
         
         $descricao  = addslashes($_POST["descricao"]);
         

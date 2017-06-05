@@ -1,17 +1,18 @@
 <?php 
+    session_start();
+    //Verifica se o usuário está logado
+    if ($_SESSION["logado"] != "ok"){
+    header ('Location: ../login/index.php');
+    }
 
     if($_POST != null)
     {
-        //Verifica se o usuário está logado
-        if ($_SESSION['logado'] != 'ok'){
-        header ('Location: ../login/index.php');
-        }
         
         $cod_bebida            =   addslashes($_POST["cod_bebida"]);
         $qtd_bebida            =   addslashes($_POST["qtd_bebida"]);
         $cod_refeicao          =   addslashes($_POST["cod_refeicao"]);
         $qtd_refeicao          =   addslashes($_POST["qtd_refeicao"]);
-        $cod_usuario           =   addslashes($_POST["cod_usuario"]);
+        $cod_usuario           =   addslashes($_SESSION['id_usuario']);
         
         $conexao = new mysqli("localhost", "root", "","bar_php");
         
@@ -106,9 +107,9 @@
                 }
                 ?>
                         
-            </select>  
+            </select>
             Quantidade: 
-            <input type="text" name="qtd_bebida" required><br><br>
+            <input style="width:20px;" type="text" name="qtd_bebida" required><br><br>
                 
             Refeição: 
             <select name="cod_refeicao">
@@ -146,42 +147,7 @@
                         
             </select>    
             Quantidade: 
-            <input type="text" name="qtd_refeicao" required><br><br>
-            
-            Usuário: 
-            <select name="cod_usuario">
-                 <?php 
-                
-                //Não exibe mensagens de erro de variável vazia
-                error_reporting(1);
-                
-                //Conectando ao banco
-                $conexao = new mysqli("localhost", "root", "","bar_php");
-        
-                if($conexao->connect_error == true)
-                {
-                    $msg_erro = $conexao->connect_error;
-                    echo "Erro de conexão: $msg_erro";
-                    exit;
-                }
-                
-                $sql = "SELECT * 
-                        FROM usuario";
-                
-                $retorno = $conexao->query($sql);
-                
-                //Obtem cada registro do BD
-                while ( $registro = $retorno->fetch_array()) 
-                {
-                    $id        = $registro["id"];
-                    $nome      = $registro["nome"];
-                
-                    //Colocando os registros no select
-                    echo 
-                        "<option value=$id>$nome</option>";
-                }
-                ?>
-           
+            <input style="width:20px;" type="text" name="qtd_refeicao" required><br><br>
 
             <input type="submit" value="Cadastrar">
             </form>

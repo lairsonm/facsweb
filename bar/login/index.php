@@ -49,12 +49,12 @@
                     {
                     echo "
                     <script type='text/javascript'>
-                    location.href = '../bebida/listar_bebida.php';
+                    location.href = '../menu/menu_principal.php';
                     </script>";
                     } else {
                     echo "
                     <script type='text/javascript'>
-                    location.href = '../bebida/listar_tipo_bebida.php';
+                    location.href = '../pedido/cadastrar_pedido.php';
                     </script>";
                     }
                 } else {
