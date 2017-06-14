@@ -55,7 +55,7 @@
         
         <fieldset style="width:300px">
             <legend>Informações da Refeição</legend>
-            <form method=post>
+            <form action="../refeicao/cadastrar_refeicao.php" method=post>
                 Refeição:<br>
                 <input type="text" name="descricao" required><br><br>
                 

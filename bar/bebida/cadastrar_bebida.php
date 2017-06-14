@@ -34,7 +34,7 @@
         {
             echo "<script>
                     alert('Cadastrado com Sucesso!');
-                    location.href = 'cadastrar_bebida.php';
+                    location.href = '../menu/index.php';
                     </script>";
         } else {
             echo "<script>
