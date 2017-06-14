@@ -73,7 +73,7 @@
         <br><br>
         <fieldset style="width:300px">
             <legend>Informações de Tipo de Bebida</legend>
-            <form method=post>
+            <form action="../bebida/cadastrar_tipo_bebida.php" method=post>
                 Tipo:<br>
                 <input type="text" name="descricao" required><br><br>
                 
