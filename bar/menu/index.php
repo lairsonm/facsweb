@@ -118,8 +118,7 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
 
-    <!-- Menu Toggle Script -->
-    <script src="js/menu.js"></script>
+
     <script>
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
