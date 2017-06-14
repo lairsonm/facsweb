@@ -48,14 +48,9 @@
                     if ($_SESSION['perfil_usuario'] == 1)
                     {
                     echo "
-                    <script type='text/javascript'>
-                    location.href = '../menu/menu_principal.php';
-                    </script>";
+                    header ('Location: ../menu/menu_principal.php');
                     } else {
-                    echo "
-                    <script type='text/javascript'>
-                    location.href = '../pedido/cadastrar_pedido.php';
-                    </script>";
+                    header ('Location: ../pedido/listar_pedido.php');
                     }
                 } else {
                     echo"<script>
