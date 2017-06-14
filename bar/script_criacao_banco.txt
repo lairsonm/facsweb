@@ -55,10 +55,10 @@ INSERT INTO bebida (id, descricao, cod_tipo) VALUES (3, 'Skol', 2);
 INSERT INTO bebida (id, descricao, cod_tipo) VALUES (4, 'Bhrama', 2);
 INSERT INTO bebida (id, descricao, cod_tipo) VALUES (5, 'Hemisferio Reserva Cabernet ', 3);
 
-INSERT INTO tipo_comida (id, descricao) VALUES (1, 'Petisco');
-INSERT INTO tipo_comida (id, descricao) VALUES (2, 'Prato Principal');
-INSERT INTO tipo_comida (id, descricao) VALUES (3, 'Sobremesa');
+INSERT INTO tipo_refeicao (id, descricao) VALUES (1, 'Petisco');
+INSERT INTO tipo_refeicao (id, descricao) VALUES (2, 'Prato Principal');
+INSERT INTO tipo_refeicao (id, descricao) VALUES (3, 'Sobremesa');
 
-INSERT INTO comida (id, descricao, cod_tipo) VALUES (1, 'Batata Frita', 1);
-INSERT INTO comida (id, descricao, cod_tipo) VALUES (2, 'Filé de Frango', 2);
-INSERT INTO comida (id, descricao, cod_tipo) VALUES (3, 'Petit Gateau', 3);
+INSERT INTO refeicao (id, descricao, cod_tipo) VALUES (1, 'Batata Frita', 1);
+INSERT INTO refeicao (id, descricao, cod_tipo) VALUES (2, 'Filé de Frango', 2);
+INSERT INTO refeicao (id, descricao, cod_tipo) VALUES (3, 'Petit Gateau', 3);
