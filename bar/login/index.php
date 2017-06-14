@@ -47,7 +47,6 @@
                     
                     if ($_SESSION['perfil_usuario'] == 1)
                     {
-                    echo "
                     header ('Location: ../menu/menu_principal.php');
                     } else {
                     header ('Location: ../pedido/listar_pedido.php');
