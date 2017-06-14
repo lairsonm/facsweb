@@ -39,3 +39,26 @@ CREATE TABLE pedido (
     qtd_refeicao int,
     cod_usuario int
 );
+
+INSERT INTO usuario (id, nome, usuario, senha, perfil) 
+VALUES (1, 'Administrador', 'admin', '21232f297a57a5a743894a0e4a801fc3', 1);
+INSERT INTO usuario (id, nome, usuario, senha, perfil) 
+VALUES (2, 'Garçom 1', 'g1', '0120a4f9196a5f9eb9f523f31f914da7', 0);
+
+INSERT INTO tipo_bebida (id, descricao) VALUES (1, 'Refrigerante');
+INSERT INTO tipo_bebida (id, descricao) VALUES (2, 'Cerveja');
+INSERT INTO tipo_bebida (id, descricao) VALUES (3, 'Vinho');
+
+INSERT INTO bebida (id, descricao, cod_tipo) VALUES (1, 'Coca', 1);
+INSERT INTO bebida (id, descricao, cod_tipo) VALUES (2, 'Pepsi', 1);
+INSERT INTO bebida (id, descricao, cod_tipo) VALUES (3, 'Skol', 2);
+INSERT INTO bebida (id, descricao, cod_tipo) VALUES (4, 'Bhrama', 2);
+INSERT INTO bebida (id, descricao, cod_tipo) VALUES (5, 'Hemisferio Reserva Cabernet ', 3);
+
+INSERT INTO tipo_refeicao (id, descricao) VALUES (1, 'Petisco');
+INSERT INTO tipo_refeicao (id, descricao) VALUES (2, 'Prato Principal');
+INSERT INTO tipo_refeicao (id, descricao) VALUES (3, 'Sobremesa');
+
+INSERT INTO refeicao (id, descricao, cod_tipo) VALUES (1, 'Batata Frita', 1);
+INSERT INTO refeicao (id, descricao, cod_tipo) VALUES (2, 'Filé de Frango', 2);
+INSERT INTO refeicao (id, descricao, cod_tipo) VALUES (3, 'Petit Gateau', 3);
