@@ -58,7 +58,7 @@
         
         <fieldset style="width:300px">
             <legend>Cadastro de Usuário</legend>
-            <form method=post>
+            <form action="../usuario/cadastrar_usuario.php" method=post>
                 Nome:<br>
                 <input type="text" name="nome" required><br><br>
                 

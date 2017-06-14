@@ -58,7 +58,7 @@
         <br><br>
         <fieldset style="width:300px;"> 
             <legend>Informações do Pedido</legend>
-            <form method="post">
+            <form action="../pedido/cadastrar_pedido.php" method="post">
             Bebida: 
             <select name="cod_bebida">
                  <?php 

@@ -84,7 +84,7 @@
                          <tr>
                             <td>$id</td>
                             <td>$descricao</td>
-                            <td><a href='editar_tipo_bebida.php?id=$id'><img src='img/edit.png'></a></td>
+                            <td><a href='editar_tipo_bebida.php?id=$id'><img src='../img/edit.png'></a></td>
                             <td><a onclick=\"return confirm('Deseja realmente apagar?');\" href=\"?delete_id={$id['id']}\"><img src='../img/delete.png'></a></td>
                          </tr>";
                 }

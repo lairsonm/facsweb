@@ -55,7 +55,7 @@
         <h1>Cadastro de Bebidas</h1>
         <fieldset style="width:300px">
             <legend>Informações da Bebida</legend>
-            <form method=post>
+            <form action="../bebida/cadastrar_bebida.php" method=post>
                 Bebida:<br>
                 <input type="text" name="descricao" required><br><br>
                 
