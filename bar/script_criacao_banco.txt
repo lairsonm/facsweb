@@ -2,37 +2,37 @@ CREATE DATABASE bar_php;
 
 USE DATABASE bar_php;
 CREATE TABLE usuario (
-    id int,
+    id int AUTO_INCREMENT PRIMARY KEY ,
     nome varchar(50),
     usuario varchar(15),
-    senha varchar(15),
+    senha varchar(255),
     perfil int
 );
 
 CREATE TABLE bebida (
-    id int,
+    id int  AUTO_INCREMENT PRIMARY KEY,
     descricao varchar(50),
     cod_tipo varchar(15)
 );
 
 CREATE TABLE refeicao (
-    id int,
+    id int  AUTO_INCREMENT PRIMARY KEY,
     descricao varchar(50),
     cod_tipo varchar(15)
 );
 
 CREATE TABLE tipo_bebida (
-    id int,
+    id int  AUTO_INCREMENT PRIMARY KEY,
     descricao varchar(50)
 );
 
 CREATE TABLE tipo_refeicao (
-    id int,
+    id int  AUTO_INCREMENT PRIMARY KEY,
     descricao varchar(50)
 );
 
 CREATE TABLE pedido (
-    id int,
+    id int  AUTO_INCREMENT PRIMARY KEY,
     cod_bebida int,
     qtd_bebida int,
     cod_refeicao int,

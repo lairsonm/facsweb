@@ -6,5 +6,5 @@ session_start();
 session_destroy();
 
 //Redirecionando
-header('Location: index.php');
+header('Location: ../index.html');
 ?>

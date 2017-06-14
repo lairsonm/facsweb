@@ -25,7 +25,7 @@
                 AND senha = '$senha'";
         
         $retorno = $conexao->query($sql);
-                
+
                 //Erro de execução no SQL
                 if ($retorno == false) 
                 {
@@ -47,7 +47,7 @@
                     
                     if ($_SESSION['perfil_usuario'] == 1)
                     {
-                    header ('Location: ../menu/menu_principal.php');
+                    header('Location: ../menu/index.php');
                     } else {
                     header ('Location: ../pedido/listar_pedido.php');
                     }
