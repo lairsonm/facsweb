@@ -49,7 +49,7 @@
                     {
                     echo "
                     <script type='text/javascript'>
-                    location.href = '../menu/menu_principal.php';
+                    location.href = '../menu/index.php';
                     </script>";
                     } else {
                     echo "

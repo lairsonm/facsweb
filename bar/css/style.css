@@ -6,6 +6,9 @@ body, html {
 	width: 100% !important;
 	height: 100% !important;
 }
+i, icon-white{
+    color: white !important;
+}
 h1 {
 	font-weight: 700;
 }
@@ -74,7 +77,7 @@ hr {
 	width: 70px;
 	text-align: center;
 	position: relative;
-	background: #7bc3d1;
+	background: #932806;
 	margin: 0 auto;
 	margin-bottom: 30px;
 	border: 0;
@@ -174,7 +177,7 @@ hr {
 	padding: 100px 0;
 	text-align: center;
 	color: #fff;
-	background: url(../img/intro2-bg.jpg) no-repeat center top;
+	background: url(../img/intro-bg.jpg) no-repeat center top;
 	background-color: #7bc3d1;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -205,7 +208,7 @@ hr {
 /* Skills Section */
 #skills {
 	padding: 100px 0;
-	background: #7bc3d1;
+	background: #932806;
 }
 #skills h2 {
 	color: #fff;
@@ -383,7 +386,7 @@ ol.type li a:hover {
 /* Achivements Section */
 #achievements {
 	padding: 100px 0;
-	background: #7bc3d1;
+	background: #932806;
 }
 #achievements h2 {
 	color: #fff;
@@ -513,7 +516,7 @@ ol.type li a:hover {
 #contact {
 	padding: 100px 0 40px 0;
 	color: #121d1f;
-	background: #7bc3d1;
+	background: red;
 }
 #contact h2 {
 	color: #fff;
