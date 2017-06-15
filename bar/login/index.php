@@ -1,8 +1,8 @@
-<?php 
+<?php
+
+error_reporting(1);
     if ($_POST != null)
-    {
-        error_reporting(1);
-        
+    {  
         session_start();
         
        //Conectando ao banco

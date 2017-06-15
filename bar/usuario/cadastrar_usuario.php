@@ -1,4 +1,5 @@
 <?php 
+    error_reporting(1);
     session_start();
     //Verifica se o usuário está logado
     if ($_SESSION["logado"] != "ok"){
@@ -36,7 +37,7 @@
         {
             echo "<script>
                     alert('Cadastrado com Sucesso!');
-                    location.href = 'cadastrar_usuario.php';
+                    location.href = '../menu/index.php';
                     </script>";
         } else {
             echo "<script>

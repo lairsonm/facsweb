@@ -1,4 +1,5 @@
 <?php 
+    error_reporting(1);
     session_start();
     //Verifica se o usuário está logado
     if ($_SESSION["logado"] != "ok"){
@@ -14,8 +15,8 @@
     <body>
         <center>
             <h1>Listagem de Pedidos</h1>
-        
-            
+            <a href="../pedido/cadastrar_pedido.php"><img src="../img/add.png">Cadastrar Pedidos</a>
+            <br><br>
             <table border="1">
             <tr>
                 <th>ID</th>

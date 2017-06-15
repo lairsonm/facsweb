@@ -4,7 +4,7 @@
     if ($_SESSION["logado"] != "ok"){
     header ('Location: ../login/index.php');
     }
-    
+    error_reporting(1);
     //Verificando se o enviar foi clicado
     if ($_POST != NULL) 
     {
@@ -34,7 +34,7 @@
         {
             echo "<script>
                     alert('Cadastrado com Sucesso!');
-                    location.href = 'cadastrar_tipo_bebida.php';
+                    location.href = '../menu/index.php';
                     </script>";
         } else {
             echo "<script>

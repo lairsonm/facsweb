@@ -1,10 +1,11 @@
 <?php 
     session_start();
     //Verifica se o usuário está logado
-    if ($_SESSION["logado"] != "ok"){
-    header ('Location: ../login/index.php');
+    if ($_SESSION["logado"] != "ok")
+    {
+        header ('Location: ../login/index.php');
     }
-
+    error_reporting(1);
     if($_POST != null)
     {
         
@@ -33,8 +34,14 @@
         {
             echo "<script>
             alert('Cadastrado com sucesso!');
-            location.href = 'cadastrar_pedido.php';
             </script>";
+            //Verifica se é admin ou garçom
+            if ($_SESSION["perfil"] != "1")
+            {
+                header ('Location: ../pedido/listar_pedido.php');
+            } else {
+                header('Location: ../menu/index.php');
+            }
         } else {
             echo "<script>
             alert('Erro ao Cadastrar!');
@@ -53,14 +60,14 @@
     <body>
         <center>
         <h1>Cadastro de Pedido</h1>
-        
+        <a href="../pedido/listar_pedido.php"><img src="../img/voltar.gif">Listar Pedidos</a>
             
         <br><br>
         <fieldset style="width:300px;"> 
             <legend>Informações do Pedido</legend>
             <form action="../pedido/cadastrar_pedido.php" method="post">
             Bebida: 
-            <select name="cod_bebida">
+            <select style="width:200px;" name="cod_bebida">
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
@@ -93,12 +100,12 @@
                 }
                 ?>
                         
-            </select>
+            </select><br>
             Quantidade: 
             <input style="width:20px;" type="text" name="qtd_bebida" required><br><br>
                 
             Refeição: 
-            <select name="cod_refeicao">
+            <select style="width:200px;" name="cod_refeicao">
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
@@ -131,7 +138,7 @@
                 }
                 ?>
                         
-            </select>    
+            </select> <br>    
             Quantidade: 
             <input style="width:20px;" type="text" name="qtd_refeicao" required><br><br>
 
