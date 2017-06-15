@@ -64,7 +64,8 @@
                     }
                 
                 $sql = "SELECT *
-                        FROM bebida";
+                        FROM bebida
+                        ORDER BY descricao";
                 
                 $retorno = $conexao->query($sql);
                 

@@ -64,7 +64,8 @@
                     }
                 
                 $sql = "SELECT *
-                        FROM refeicao";
+                        FROM refeicao
+                        ORDER BY descricao";
                 
                 $retorno = $conexao->query($sql);
                 

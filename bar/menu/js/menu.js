@@ -36,7 +36,7 @@
     }
     function listartiporefeicao() {
         $(function() {
-            $('#DisplayDiv').load('../pedido/listar_tipo_refeicao.php');
+            $('#DisplayDiv').load('../refeicao/listar_tipo_refeicao.php');
             return false;
         });
     }

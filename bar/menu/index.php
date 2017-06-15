@@ -4,6 +4,9 @@
     if ($_SESSION["logado"] != "ok"){
     header ('Location: ../login/index.php');
     }
+    if ($_SESSION["perfil_usuario"] == 0){
+    header ('Location: ../pedido/listar_pedido.php');
+    }
 ?>
 
 <!DOCTYPE html>

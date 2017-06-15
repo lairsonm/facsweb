@@ -33,15 +33,9 @@
         if ($retorno)
         {
             echo "<script>
-            alert('Cadastrado com sucesso!');
-            </script>";
-            //Verifica se é admin ou garçom
-            if ($_SESSION["perfil"] != "1")
-            {
-                header ('Location: ../pedido/listar_pedido.php');
-            } else {
-                header('Location: ../menu/index.php');
-            }
+                  alert('Cadastrado com sucesso!');
+                  location.href = '../menu/index.php';
+                  </script>";
         } else {
             echo "<script>
             alert('Erro ao Cadastrar!');
@@ -59,11 +53,19 @@
     </head>
     <body>
         <center>
-        <h1>Cadastro de Pedido</h1>
-        <a href="../pedido/listar_pedido.php"><img src="../img/voltar.gif">Listar Pedidos</a>
+            <h1>Cadastro de Pedido</h1>
             
+            <?php 
+            if ($_SESSION["perfil_usuario"] == "0")
+            {
+                echo "<a href='../pedido/listar_pedido.php'><img src='../img/voltar.gif''>Listar Pedidos</a>
+                <br>
+                <a href='../login/logout.php'><img src='../img/logout.png''>Logout</a>";
+            }
+            ?>
+
         <br><br>
-        <fieldset > 
+        <fieldset style="width:300px;" > 
             <legend>Informações do Pedido</legend>
             <form action="../pedido/cadastrar_pedido.php"  method="post">
             <div class="form-group">
@@ -108,7 +110,7 @@
                 </div>
                 <div class="col-md-2">
             Quantidade: 
-            <input style="width:20px;" type="text" name="qtd_bebida" class="form-control"  required><br><br>
+            <input style="width:90px;" type="number" name="qtd_bebida" class="form-control"  required><br><br>
                 </div>
                 </div>
                 <div class="col-md-12">
@@ -152,7 +154,7 @@
                 <div class="col-md-2">
             Quantidade: 
                 
-            <input style="width:20px;" type="text" name="qtd_refeicao" class="form-control" 
+            <input style="width:90px;" type="number" name="qtd_refeicao" class="form-control" 
                    required><br>
                 </div>
                 </div>

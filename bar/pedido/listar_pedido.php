@@ -15,7 +15,16 @@
     <body>
         <center>
             <h1>Listagem de Pedidos</h1>
-            <a href="../pedido/cadastrar_pedido.php"><img src="../img/add.png">Cadastrar Pedidos</a>
+            
+            <?php 
+            if ($_SESSION["perfil_usuario"] == "0")
+            {
+                echo "<a href='../pedido/cadastrar_pedido.php'><img src='../img/add.png'>Cadastrar Pedidos</a>
+                <br>
+                <a href='../login/logout.php'><img src='../img/logout.png''>Logout</a>";
+            }
+            ?>
+            
             <br><br>
             <div class="table-responsive">
             <table border="1" class="table">
@@ -72,7 +81,8 @@
                         FROM pedido p
                         INNER JOIN bebida b ON p.cod_bebida = b.id
                         INNER JOIN refeicao r ON p.cod_refeicao = r.id
-                        INNER JOIN usuario u ON p.cod_usuario = u.id";
+                        INNER JOIN usuario u ON p.cod_usuario = u.id
+                        ORDER BY p.id";
                 
                 
                 $retorno = $conexao->query($sql);

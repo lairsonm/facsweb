@@ -40,7 +40,8 @@
                 }
                 
                 $sql = "SELECT *
-                        FROM usuario";
+                        FROM usuario
+                        ORDER BY nome";
                 
                 $retorno = $conexao->query($sql);
                 

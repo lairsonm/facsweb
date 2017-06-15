@@ -64,7 +64,8 @@
                     }
                 
                 $sql_select = "SELECT *
-                        FROM tipo_refeicao";
+                               FROM tipo_refeicao
+                               ORDER BY descricao";
                 
                 $retorno = $conexao->query($sql_select);
                 
