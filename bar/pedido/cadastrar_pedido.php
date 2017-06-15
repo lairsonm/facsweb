@@ -63,11 +63,15 @@
         <a href="../pedido/listar_pedido.php"><img src="../img/voltar.gif">Listar Pedidos</a>
             
         <br><br>
-        <fieldset style="width:300px;"> 
+        <fieldset > 
             <legend>Informações do Pedido</legend>
-            <form action="../pedido/cadastrar_pedido.php" method="post">
+            <form action="../pedido/cadastrar_pedido.php"  method="post">
+            <div class="form-group">
+            <div class="col-md-12 center">
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
             Bebida: 
-            <select style="width:200px;" name="cod_bebida">
+            <select style="width:200px;" name="cod_bebida" class="form-control" >
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
@@ -91,21 +95,27 @@
                 //Obtem cada registro do BD
                 while ( $registro = $retorno->fetch_array()) 
                 {
-                    $id        = $registro["id"];
-                    $descricao = $registro["descricao"];
+                    $idbebida       = $registro["id"];
+                    $descricaobebida = $registro["descricao"];
                 
                     //Colocando os registros no select
                     echo 
-                        "<option value=$id>$descricao</option>";
+                        "<option value=$idbebida>$descricaobebida</option>";
                 }
                 ?>
                         
-            </select><br>
+                    </select>
+                </div>
+                <div class="col-md-2">
             Quantidade: 
-            <input style="width:20px;" type="text" name="qtd_bebida" required><br><br>
-                
+            <input style="width:20px;" type="text" name="qtd_bebida" class="form-control"  required><br><br>
+                </div>
+                </div>
+                <div class="col-md-12">
+                <div class="col-md-2"></div>
+                <div class="col-md-5">
             Refeição: 
-            <select style="width:200px;" name="cod_refeicao">
+            <select style="width:200px;" name="cod_refeicao" class="form-control" >
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
@@ -129,20 +139,26 @@
                 //Obtem cada registro do BD
                 while ( $registro = $retorno->fetch_array()) 
                 {
-                    $id        = $registro["id"];
-                    $descricao = $registro["descricao"];
+                    $idrefeicao        = $registro["id"];
+                    $descricaorefeicao = $registro["descricao"];
                 
                     //Colocando os registros no select
                     echo 
-                        "<option value=$id>$descricao</option>";
+                        "<option value=$idrefeicao>$descricaorefeicao</option>";
                 }
                 ?>
                         
-            </select> <br>    
+            </select> </div> 
+                <div class="col-md-2">
             Quantidade: 
-            <input style="width:20px;" type="text" name="qtd_refeicao" required><br><br>
+                
+            <input style="width:20px;" type="text" name="qtd_refeicao" class="form-control" 
+                   required><br>
+                </div>
+                </div>
 
-            <input type="submit" value="Cadastrar">
+            <input type="submit" value="Cadastrar" class="btn btn-default">
+                </div>
             </form>
         </fieldset>
         </center>

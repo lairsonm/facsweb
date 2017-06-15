@@ -55,7 +55,7 @@
                     <a onclick="cadastrarbebidas();">Cadastro de bebidas</a>
                 </li>
                 <li>
-                    <a onclick="listartipobebidas();">Listagem de bebidas</a>
+                    <a onclick="listartipobebidas();">Listagem tipos de bebidas</a>
                 </li>
                 <li>
                     <a onclick="cadasrartipobebidas();">Cadastrar tipos de bebidas</a>
@@ -92,17 +92,19 @@
         <!-- /#sidebar-wrapper -->
 
         <!-- Page Content -->
-        <div id="page-content-wrapper">
+       <!-- <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-12">
                         <h1>Bem vindo ao acesso de administrador</h1>
                         <p>Clique no botão abaixo para abrir o menu</p>
-                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Ver Menu</a>
+                        <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Ver/Esconder Menu</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
+        
+        <div id="page-content-wrapper"> </div>
         <!-- /#page-content-wrapper -->
         <div id="DisplayDiv">
         
@@ -117,7 +119,8 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="../js/bootstrap.min.js"></script>
-
+    <script>
+        $("#wrapper").toggleClass("toggled");</script>
 
     <script>
     $("#menu-toggle").click(function(e) {

@@ -17,7 +17,8 @@
             <h1>Listagem de Pedidos</h1>
             <a href="../pedido/cadastrar_pedido.php"><img src="../img/add.png">Cadastrar Pedidos</a>
             <br><br>
-            <table border="1">
+            <div class="table-responsive">
+            <table border="1" class="table">
             <tr>
                 <th>ID</th>
                 <th>Bebida</th>
@@ -106,6 +107,7 @@
                 }
                 ?>   
             </table>
+            </div>
         </center>
     </body>
 </html>

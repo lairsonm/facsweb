@@ -57,19 +57,25 @@
         <center>
         <h1>Cadastro de Usuário</h1>
         
-        <fieldset style="width:300px">
+        <fieldset>
             <legend>Cadastro de Usuário</legend>
             <form action="../usuario/cadastrar_usuario.php" method=post>
+                 <div class="form-group">
+                <div class="col-md-4">     
                 Nome:<br>
-                <input type="text" name="nome" required><br><br>
-                
+                <input type="text" name="nome" class="form-control" required><br>
+                </div>
+                      <div class="col-md-4"> 
                 Usuário:<br>
-                <input type="text" name="usuario" required><br><br>
-                
+                <input type="text" name="usuario" class="form-control" required><br>
+                           </div>
+                 <div class="col-md-4"> 
                 Senha:<br>
-                <input type="text" name="senha" required><br><br>
+                <input type="text" name="senha" class="form-control" required><br>
+                      </div>
+                </div>
                 
-                <input type="submit">
+                <input type="submit" class="btn btn-default">
             </form>
         </fieldset>
         </center>

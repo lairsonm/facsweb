@@ -54,14 +54,15 @@
     <body>
         <center>
         <h1>Cadastro de Bebidas</h1>
-        <fieldset style="width:300px">
+        <fieldset style="width:400px">
             <legend>Informações da Bebida</legend>
-            <form action="../bebida/cadastrar_bebida.php" method=post>
+            <form class="navbar-form" action="../bebida/cadastrar_bebida.php" method=post>
+                  <div class="form-group">
                 Bebida:<br>
-                <input type="text" name="descricao" required><br><br>
-                
-                Tipo:               
-                <select name="cod_tipo">
+                <input type="text" name="descricao" class="form-control"    required><br><br>
+            
+                Tipo:    <br>           
+                <select class="form-control" name="cod_tipo">
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
@@ -95,8 +96,9 @@
                 ?>
                         
                 </select>
+                </div>
                 <br><br>
-                <input type="submit">
+                <input type="submit"  class="btn btn-default" >
             </form>
         </fieldset>
         </center>

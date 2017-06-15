@@ -1,4 +1,3 @@
-
     function listarbebidas() {
         $(function() {
             $('#DisplayDiv').load('../bebida/listar_bebida.php');

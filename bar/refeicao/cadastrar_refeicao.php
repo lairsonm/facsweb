@@ -54,14 +54,15 @@
         <center>
         <h1>Cadastro de Refeições</h1>
         
-        <fieldset style="width:300px">
+        <fieldset style="width:400px">
             <legend>Informações da Refeição</legend>
             <form action="../refeicao/cadastrar_refeicao.php" method=post>
+                <div class="form-group">
                 Refeição:<br>
-                <input type="text" name="descricao" required><br><br>
+                <input type="text" name="descricao" class="form-control" required> <br>
                 
                 Tipo:                
-                <select name="cod_tipo">
+                <select name="cod_tipo" class="form-control" >
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
@@ -95,8 +96,9 @@
                 ?>
                         
                 </select>
-                <br><br>
-                <input type="submit">
+                <br>
+                <input type="submit" class="btn btn-default">
+                </div>
             </form>
         </fieldset>
         </center>

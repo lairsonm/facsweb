@@ -16,8 +16,8 @@
         <center>
             <h1>Listagem de Usuários</h1>
         
-            
-            <table border="1">
+            <div class="table-responsive">    
+            <table border="1" class="table">
             <tr>
                 <th>ID</th>
                 <th>Nome</th>
@@ -93,6 +93,7 @@
             <tr>
             </tr>    
             </table>
+            </div>
         </center>
     </body>
 </html>

@@ -53,13 +53,15 @@
         <center>
         <h1>Cadastro de Tipo de Refeição</h1>
         
-        <fieldset style="width:300px">
+        <fieldset style="width:400px">
             <legend>Informações de Tipo de Refeição</legend>
             <form action="../refeicao/cadastrar_tipo_refeicao.php" method=post>
+                 <div class="form-group">
                 Tipo:<br>
-                <input type="text" name="descricao" required><br><br>
+                <input type="text" name="descricao" class="form-control" required><br>
                 
-                <input type="submit">
+                <input type="submit" class="btn btn-default" >
+                </div>
             </form>
         </fieldset>
         </center>
