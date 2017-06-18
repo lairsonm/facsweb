@@ -52,40 +52,43 @@
                     </a>
                 </li>
                 <li>
-                    <a onclick="listarbebidas();">Listagem de bebidas</a>
+                    <a onclick="listarbebidas();">Listagem de Bebidas</a>
                 </li>
                 <li>
-                    <a onclick="cadastrarbebidas();">Cadastro de bebidas</a>
+                    <a onclick="cadastrarbebidas();">Cadastro de Bebidas</a>
+                </li>
+                <!--<li>
+                    <a onclick="editarbebidas();">Editar Bebidas</a>
+                </li>-->
+                <li>
+                    <a onclick="listartipobebidas();">Listagem Tipos de Bebidas</a>
                 </li>
                 <li>
-                    <a onclick="listartipobebidas();">Listagem tipos de bebidas</a>
+                    <a onclick="cadasrartipobebidas();">Cadastrar Tipos de Bebidas</a>
                 </li>
                 <li>
-                    <a onclick="cadasrartipobebidas();">Cadastrar tipos de bebidas</a>
+                    <a onclick="listarrefeicao();">Listagem de Refeições</a>
                 </li>
                 <li>
-                    <a onclick="listarrefeicao();">Listagem de refeições</a>
+                    <a onclick="cadastrarrefeicao();">Cadastrar Refeições</a>
                 </li>
                 <li>
-                    <a onclick="cadastrarrefeicao();">Cadastrar refeições</a>
+                    <a onclick="listartiporefeicao();">Listagem Tipos de Refeições</a>
                 </li>
                 <li>
-                    <a onclick="listartiporefeicao();">Listagem tipos de refeições</a>
+                    <a onclick="cadastrartiporefeicao();">Cadastrar Tipos de Refeições</a>
                 </li>
                 <li>
-                    <a onclick="cadastrartiporefeicao();">Cadastrar tipos de refeições</a>
+                    <a onclick="listarpedido();">Listagem de Pedidos</a>
                 </li>
                 <li>
-                    <a onclick="listarpedido();">Listagem de pedidos</a>
+                    <a onclick="cadastrarpedido();">Cadastrar Pedidos</a>
                 </li>
                 <li>
-                    <a onclick="cadastrarpedido();">Cadastrar pedidos</a>
+                    <a onclick="listarusuario();">Listar Usuários</a>
                 </li>
                 <li>
-                    <a onclick="listarusuario();">Listar usuarios</a>
-                </li>
-                <li>
-                    <a onclick="cadastrarusuario();">Cadastrar usuarios</a>
+                    <a onclick="cadastrarusuario();">Cadastrar Usuários</a>
                 </li>
                 <li>
                     <a href="../login/logout.php">Logout</a>

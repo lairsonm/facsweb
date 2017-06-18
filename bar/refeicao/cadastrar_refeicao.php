@@ -1,7 +1,8 @@
 <?php 
     session_start();
     //Verifica se o usuário está logado
-    if ($_SESSION["logado"] != "ok"){
+    if ($_SESSION["logado"] != "ok")
+    {
     header ('Location: ../login/index.php');
     } 
     error_reporting(1);

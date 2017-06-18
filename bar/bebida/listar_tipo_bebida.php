@@ -1,9 +1,22 @@
 <?php 
-    error_reporting(1);
+    
     session_start();
     //Verifica se o usuário está logado
     if ($_SESSION["logado"] != "ok"){
     header ('Location: ../login/index.php');
+    }
+
+    //Não exibe mensagens de erro de variável vazia
+    error_reporting(1);
+        
+    //Conectando ao banco
+    $conexao = new mysqli("localhost", "root", "","bar_php");
+        
+    if($conexao->connect_error == true)
+    {
+        $msg_erro = $conexao->connect_error;
+        echo "Erro de conexão: $msg_erro";
+        exit;
     }
 ?>
 
@@ -25,20 +38,7 @@
                 <th>Apagar</th>
             </tr>
                 <?php 
-                
-                //Não exibe mensagens de erro de variável vazia
-                error_reporting(1);
-                
-                //Conectando ao banco
-                $conexao = new mysqli("localhost", "root", "","bar_php");
         
-                if($conexao->connect_error == true)
-                {
-                    $msg_erro = $conexao->connect_error;
-                    echo "Erro de conexão: $msg_erro";
-                    exit;
-                }
-                
                 // Configurando delete
                 if (isset($_GET['delete_id'])) {
                     // Recebe o valor do id da URL
@@ -86,7 +86,7 @@
                          <tr>
                             <td>$id</td>
                             <td>$descricao</td>
-                            <td><a href='editar_tipo_bebida.php?id=$id'><img src='../img/edit.png'></a></td>
+                            <td><a href='../bebida/editar_tipo_bebida.php?id=$id'><img src='../img/edit.png'></a></td>
                             <td><a onclick=\"return confirm('Deseja realmente apagar?');\" href=\"?delete_id={$id['id']}\"><img src='../img/delete.png'></a></td>
                          </tr>";
                 }

@@ -10,6 +10,12 @@
             return false;
         });
     }
+    //function editarbebidas() {
+    //    $(function() {
+    //        $('#DisplayDiv').load('../bebida/editar_bebida.php');
+    //        return false;
+    //    });
+    //}
     function listartipobebidas() {
         $(function() {
             $('#DisplayDiv').load('../bebida/listar_tipo_bebida.php');

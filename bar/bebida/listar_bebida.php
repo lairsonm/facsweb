@@ -2,9 +2,10 @@
     error_reporting(1);
     session_start();
     //Verifica se o usuário está logado
-    if ($_SESSION["logado"] != "ok"){
-    header ('Location: ../login/index.php');
-    }
+    if ($_SESSION["logado"] != "ok")
+    {
+        header ('Location: ../login/index.php');
+    } 
 ?>
 
 <html>
@@ -52,13 +53,13 @@
                     if ($retorno_delete){
                     echo "<script>
                         alert('Excluído com Sucesso!');
-                        location.href = 'listar_bebida.php';
+                        location.href = '../menu/index.php';
                         </script>";
                     echo "<BR>";
                         } else {
                             echo "<script>
                             alert('Falha ao excluir!');
-                            location.href = 'listar_bebida.php';
+                            location.href = '../menu/index.php';
                             </script>";
                         }
                     }
@@ -86,7 +87,7 @@
                          <tr>
                             <td>$id</td>
                             <td>$descricao</td>
-                            <td><a href='editar_bebida.php?id=$id'><img src='../img/edit.png'></a></td>
+                            <td><a href='../bebida/editar_bebida.php?id=$id'><img src='../img/edit.png'></a></td>
                             <td><a onclick=\"return confirm('Deseja realmente apagar?');\" href=\"?delete_id={$id['id']}\"><img src='../img/delete.png'></a></td>
                          </tr>";
                 }
