@@ -75,7 +75,7 @@
        
         <fieldset style="width:400px">
             <legend>Informações de Tipo de Bebida</legend>
-            <form action='../bebida/cadastrar_tipo_bebida.php?id=<?php echo "$id_GET"; ?>' method=post>
+            <form action='../bebida/editar_tipo_bebida.php?id=<?php echo "$id_GET"; ?>' method=post>
                  <div class="form-group">
                 Tipo:<br>
                 <input type="text" name="descricao" class="form-control" 
