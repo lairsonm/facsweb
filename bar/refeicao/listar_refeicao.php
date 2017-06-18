@@ -53,13 +53,13 @@
                     if ($retorno_delete){
                     echo "<script>
                         alert('Excluído com Sucesso!');
-                        location.href = 'listar_refeicao.php';
+                        location.href = '../menu/index.php';
                         </script>";
                     echo "<BR>";
                         } else {
                             echo "<script>
                             alert('Falha ao excluir!');
-                            location.href = 'listar_refeicao.php';
+                            location.href = '../menu/index.php';
                             </script>";
                         }
                     }
