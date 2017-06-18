@@ -27,7 +27,7 @@
         
         //Configurando Update
         $sql = "UPDATE tipo_bebida
-                SET descricao = '$descricao',
+                SET descricao = '$descricao'
                 WHERE id = $id_GET";
         echo $sql;
         
