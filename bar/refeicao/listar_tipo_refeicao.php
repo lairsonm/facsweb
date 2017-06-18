@@ -40,30 +40,6 @@
                     exit;
                 }
                 
-                // Configurando delete
-                if (isset($_GET['delete_id'])) {
-                    // Recebe o valor do id da URL
-                    $delete_id = (int) $_GET['delete_id'];
-
-                    // Executa o delete
-                    $sql_delete="DELETE FROM tipo_refeicao WHERE id='$delete_id'";
-                    $retorno_delete = $conexao->query($sql_delete);
-
-                    // Verifica a execução do delete
-                    if ($retorno_delete){
-                    echo "<script>
-                        alert('Excluído com Sucesso!');
-                        location.href = 'listar_tipo_refeicao.php';
-                        </script>";
-                    echo "<BR>";
-                        } else {
-                            echo "<script>
-                            alert('Falha ao excluir!');
-                            location.href = 'listar_tipo_refeicao.php';
-                            </script>";
-                        }
-                    }
-                
                 $sql_select = "SELECT *
                                FROM tipo_refeicao
                                ORDER BY descricao";
