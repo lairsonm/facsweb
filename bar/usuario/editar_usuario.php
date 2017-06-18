@@ -96,7 +96,7 @@
                            </div>
                  <div class="col-md-4"> 
                 Senha:<br>
-                <input type="text" name="senha" class="form-control" required><br>
+                <input type="password" name="senha" class="form-control" required><br>
                       </div>
                  <div class="col-md-4"> 
                 Perfil:<br>
