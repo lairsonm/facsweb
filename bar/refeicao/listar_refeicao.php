@@ -88,7 +88,7 @@
                             <td>$id</td>
                             <td>$descricao</td>
                             <td><a href='../refeicao/editar_refeicao.php?id=$id'><img src='../img/edit.png'></a></td>
-                            <td><a onclick=\"return confirm('Deseja realmente apagar?');\" href=\"?delete_id={$id['id']}\"><img src='../img/delete.png'></a></td>
+                            <td><a href='../refeicao/apagar_refeicao.php?id=$id'><img src='../img/delete.png'></a></td>
                          </tr>";
                 }
                 ?>

@@ -51,32 +51,7 @@
                     echo "Erro de conexão: $msg_erro";
                     exit;
                 }
-                
-                // Configurando delete
-                if (isset($_GET['delete_id'])) {
-                    // Recebe o valor do id da URL
-                    $delete_id = (int) $_GET['delete_id'];
-
-                    // Executa o delete
-                    $sql_delete="DELETE FROM pedido WHERE id='$delete_id'";
-                    $retorno_delete = $conexao->query($sql_delete);
-
-                    // Verifica a execução do delete
-                    if ($retorno_delete){
-                    echo "<script>
-                        alert('Excluído com Sucesso!');
-                        location.href = 'listar_pedido.php';
-                        </script>";
-                    echo "<BR>";
-                        } else {
-                            echo "<script>
-                            alert('Falha ao excluir!');
-                            location.href = 'listar_pedido.php';
-                            </script>";
-                        }
-                    }
-                
-                
+               
                 $sql = "SELECT p.id as id, b.descricao as bebida, qtd_bebida, r.descricao as refeicao, qtd_refeicao, nome
                         FROM pedido p
                         INNER JOIN bebida b ON p.cod_bebida = b.id
@@ -112,7 +87,7 @@
                             <td>$refeicao</td>
                             <td>$qtd_refeicao</td>
                             <td>$nome</td>
-                            <td><a onclick=\"return confirm('Deseja realmente apagar?');\" href=\"?delete_id={$id['id']}\"><img src='../img/delete.png'></a></td>
+                            <td><a href='../pedido/apagar_pedido.php?id=$id'><img src='../img/delete.png'></a></td>
                          </tr>";
                 }
                 ?>   
