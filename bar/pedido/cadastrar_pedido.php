@@ -65,7 +65,7 @@
             ?>
 
         <br><br>
-        <fieldset style="width:300px;" > 
+        <fieldset style="width:500px;" > 
             <legend>Informações do Pedido</legend>
             <form action="../pedido/cadastrar_pedido.php"  method="post">
             <div class="form-group">
@@ -73,7 +73,7 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-5">
             Bebida: 
-            <select style="width:200px;" name="cod_bebida" class="form-control" >
+            <select  name="cod_bebida" class="form-control" >
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
@@ -117,7 +117,7 @@
                 <div class="col-md-2"></div>
                 <div class="col-md-5">
             Refeição: 
-            <select style="width:200px;" name="cod_refeicao" class="form-control" >
+            <select  name="cod_refeicao" class="form-control" >
                  <?php 
                 
                 //Não exibe mensagens de erro de variável vazia
