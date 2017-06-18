@@ -63,7 +63,7 @@
                          <tr>
                             <td>$id</td>
                             <td>$descricao</td>
-                            <td><a href='../bebida/editar_bebida.php?id=$id'><img src='../img/edit.png'></a></td>
+                            <td><a onclick='editarbebidas($id);'><img src='../img/edit.png'></a></td>
                             <td><a href='../bebida/apagar_bebida.php?id=$id'><img src='../img/delete.png'></a></td>
                          </tr>";
                 }

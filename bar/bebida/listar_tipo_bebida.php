@@ -24,6 +24,7 @@
     <head>
         <meta charset="utf-8">
         <title>Listagem de Tipo de Bebida</title>
+        <script src="js/edit.js"></script>
     </head>
     <body>
         <center>
@@ -62,9 +63,10 @@
                          <tr>
                             <td>$id</td>
                             <td>$descricao</td>
-                            <td><a href='../bebida/editar_tipo_bebida.php?id=$id'><img src='../img/edit.png'></a></td>
+                            <td><a onclick='editarbebidas($id);'><img src='../img/edit.png'></a></td>
                             <td><a href='../bebida/apagar_tipo_bebida.php?id=$id'><img src='../img/delete.png'></a></td>
                          </tr>";
+                    
                 }
                 ?>
             <tr>
