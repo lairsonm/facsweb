@@ -87,7 +87,7 @@
                          <tr>
                             <td>$id</td>
                             <td>$descricao</td>
-                            <td><a href='../refeicao/editar_tipo_refeicao.php?id=$id'><img src='../img/edit.png'></a></td>
+                            <td><a onclick='editarTipoRefeicao($id);'><img src='../img/edit.png'></a></td>
                             <td><a href='../refeicao/apagar_tipo_refeicao.php?id=$id'><img src='../img/delete.png'></a></td>
                          </tr>";
                 }

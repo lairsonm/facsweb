@@ -10,7 +10,37 @@
             return false;
         });
     }
-        function editarbebidas(id) {
+    function editarBebidas(id) {
+        $(function() {
+            $('#DisplayDiv').load('../bebida/editar_bebida.php?id='+id);
+            return false;
+        });
+    }
+    function editarTipoBebidas(id) {
+        $(function() {
+            $('#DisplayDiv').load('../bebida/editar_tipo_bebida.php?id='+id);
+            return false;
+        });
+    }
+    function editarRefeicao(id) {
+        $(function() {
+            $('#DisplayDiv').load('../bebida/editar_refeicao.php?id='+id);
+            return false;
+        });
+    }
+    function editarTipoRefeicao(id) {
+        $(function() {
+            $('#DisplayDiv').load('../bebida/editar_tipo_refeicao.php?id='+id);
+            return false;
+        });
+    }
+    function editarUsuario(id) {
+        $(function() {
+            $('#DisplayDiv').load('../bebida/editar_usuario.php?id='+id);
+            return false;
+        });
+    }
+    function editarbebidas(id) {
         $(function() {
             $('#DisplayDiv').load('../bebida/editar_bebida.php?id='+id);
             return false;

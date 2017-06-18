@@ -62,7 +62,7 @@
                          <tr>
                             <td>$id</td>
                             <td>$nome</td>
-                            <td><a href='../usuario/editar_usuario.php?id=$id'><img src='../img/edit.png'></a></td>
+                            <td><a onclick='editarUsuario($id);'><img src='../img/edit.png'></a></td>
                             <td><a href='../usuario/apagar_usuario.php?id=$id'><img src='../img/delete.png'></a></td>
                          </tr>";
                 }
