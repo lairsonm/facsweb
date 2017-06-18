@@ -24,19 +24,19 @@
     }
     function editarRefeicao(id) {
         $(function() {
-            $('#DisplayDiv').load('../bebida/editar_refeicao.php?id='+id);
+            $('#DisplayDiv').load('../refeicao/editar_refeicao.php?id='+id);
             return false;
         });
     }
     function editarTipoRefeicao(id) {
         $(function() {
-            $('#DisplayDiv').load('../bebida/editar_tipo_refeicao.php?id='+id);
+            $('#DisplayDiv').load('../refeicao/editar_tipo_refeicao.php?id='+id);
             return false;
         });
     }
     function editarUsuario(id) {
         $(function() {
-            $('#DisplayDiv').load('../bebida/editar_usuario.php?id='+id);
+            $('#DisplayDiv').load('../usuario/editar_usuario.php?id='+id);
             return false;
         });
     }
